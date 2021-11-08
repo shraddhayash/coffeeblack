@@ -1,0 +1,249 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.bg-image{
+    height: inherit;
+    width: inherit;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    position: relative;
+    transition: translateY 2s ease-in 2s;
+
+}
+.mug-image{
+    height: 90vh;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    animation-name:moveMug;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -o-animation-timing-function: ease-in;
+    
+
+}
+
+@keyframes moveMug{
+    0%, 25%,  50%,  100% {
+        transform: translateY(0);
+    }
+  50%{
+      transform: translateY(20px);
+    }
+    
+}
+.cafe-name{
+    font-size: 2rem;
+    position: absolute;
+    top:2px;
+    left: 10px;
+    color:rgb(39, 33, 33);
+
+
+
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+    
+.menu-bar{
+    list-style: none;
+    position: relative;
+    
+    
+}
+.menu-items{
+    padding: 2.5rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: rgb(88, 85, 85);
+    font-weight: bold;
+    cursor:pointer;
+}
+
+
+.title{
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: bold;
+    left: 25rem;
+    top: 12rem;
+}
+.sub-title{
+    position: absolute;
+    left:25rem ;
+    width: 30%;
+    top: 17rem;
+}
+.btn{
+     position: absolute;
+    left:25rem ;
+    top:25rem ;
+    padding: 1rem 2rem;
+    background-color: rgb(48, 16, 16);
+    color: white;
+    border: none;
+    transition: 0.6s all;
+    
+    
+}
+.btn:hover{
+    transform: translateY(-4px) ;
+
+}
+
+
+
+.bg2-image{
+    height: inherit;
+    width: inherit;
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;  
+     cursor: pointer;
+    
+
+}
+
+.cards-margin{
+    margin-top: 9rem;
+}
+.flex-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cards{
+     color:black;
+    border: 1px solid rgb(102, 42, 42);
+    border: none;
+    box-shadow: 2px 2px 4px 6px rgba(95, 12, 12, 0.5);
+    width: 20rem;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.card-container{
+    padding-bottom: 6rem;
+    position: relative;
+}
+.services{
+    position: absolute;
+    top: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.cards:hover{
+    color: blanchedalmond;
+}
+
+.cards::before{
+    content: "";
+    width: 2px;
+    height: inherit;
+    background-color: rgb(83, 31, 31);
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.6s all;
+
+}
+.cards:hover::before{
+    width: 20rem;
+    
+    
+    
+}
+h2{
+    text-align: center;
+}
+p{
+    margin-left: 1rem;
+}
+@media screen and (max-width: 700px) {
+    .menu-items{
+        display: none;
+    }
+    .mug-image{
+        display: none;
+    }
+    .bg-image{
+        position: relative;
+    }
+    .title, .sub-title{
+        position: absolute;
+        left: 9rem;
+        width: 50%;
+        font-size: 2rem;
+    }
+    .sub-title{
+        font-size: 1rem;
+        margin-top: 2rem;
+        width: 45%;
+        text-align: left;
+    }
+    .btn{
+        position: absolute;
+        left: 10rem;
+        margin-top: 4rem;
+    }
+    .card-container{
+        flex-wrap: wrap;
+        
+    }
+    .cards{
+        width: 20rem;
+        height: 30vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card-first, .card-second,{
+        margin-bottom: 2rem;
+    }
+}
+/*.card-first{
+     color:black;
+    border: 1px solid brown;
+    width: 118px;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+
+}
+
+
+.card-first::before{
+    content: "";
+    width: 2px;
+    height: inherit;
+    background-color: brown;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.6s all;
+
+    
+}
+.card-first:hover::before{
+    width: 118px;
+    
+}*/
+
